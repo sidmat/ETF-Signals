@@ -1,8 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head><title>Sid Mathur's thematic ETF multi-momentum screening system</title></head>
+<head>
+  <title>Sid Mathur's thematic ETF multi-momentum screening system</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; max-width: 720px; margin: 2em auto; padding: 0 1em; line-height: 1.5; color: #222; }
+    h1 { font-weight: 600; margin-bottom: 0.2em; }
+    h2 { font-weight: 600; margin-top: 1.6em; margin-bottom: 0.3em; }
+    .sub { color: #666; margin-top: 0; }
+    .card { border: 1px solid #ddd; border-radius: 6px; padding: 1em 1.2em; margin: 0.8em 0; background: #fafafa; }
+    .card a { font-weight: 600; text-decoration: none; color: #1565c0; }
+    .card a:hover { text-decoration: underline; }
+    .meta { color: #555; font-size: 0.92em; margin-top: 0.4em; }
+  </style>
+</head>
 <body>
-  <h2>Daily report from the thematic ETF multi-momentum screening system</h2>
-  <a href="SM-TETF-Report.pdf">View Latest Report (PDF)</a>
+  <h1>Sid Mathur's Thematic ETF Multi-Momentum Screening System</h1>
+  <p class="sub">Two strategies on the same thematic ETF universe, each updated daily.</p>
+
+  <div class="card">
+    <a href="SM-TETF-Report.pdf">Defensive Strategy &mdash; Latest Report (PDF)</a>
+    <div class="meta">
+      Dual-momentum on cluster PC1 portfolios. Lower-vol, defensive risk profile:
+      Sharpe 0.63, Max DD &minus;11.6%, 2022 &asymp; +1.6%. Inverse-vol &rarr; vol-target
+      &rarr; per-cluster cap, monthly rebalanced.
+    </div>
+  </div>
+
+  <div class="card">
+    <a href="SM-TETF-Aggressive.pdf">Aggressive Strategy &mdash; Latest Report (PDF)</a>
+    <div class="meta">
+      Relative-strength rotation on individual ETFs (leaders within leading sectors).
+      Higher-octane risk profile: Sharpe 0.93, Max DD &minus;13.5%, 2022 &minus;2.9%, CAGR 12.1%.
+      Inverse-vol weighted, monthly rebalanced, with a full-market 200d-MA trend brake.
+    </div>
+  </div>
+
+  <p class="meta">
+    Universe: ~700 thematic ETFs. Signal on relative or absolute strength depending
+    on the strategy; both share clustering, the absolute-momentum filter, and the
+    30-day compliance min-hold. Backtest window: 2021-05 to 2026-05.
+  </p>
 </body>
 </html>
